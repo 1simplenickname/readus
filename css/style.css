@@ -1,0 +1,233 @@
+body {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background: rgba(244,241,234,0.5);
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+	animation: fadeIn 1000ms ease-in-out;
+}
+
+.text {
+	color: #382110;
+	font-size: 45px;
+	font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+.subtext {
+	color: #382110;
+	font-size: 30px;
+}
+
+.fadeIn {
+    animation: fadeIn 500ms linear;
+}
+
+.fadeOut {
+    animation: fadeIn 500ms linear reverse;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 100%;
+}
+
+#home {
+	visibility: visible;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-25%);
+}
+
+#logo {
+	font-weight: bold;
+	margin-bottom: 25px;
+	color: #382110;
+	font-size: 200px;
+}
+
+#title {
+
+}
+
+#subtitle {
+	margin-bottom: 50px;
+}
+
+#searchBar {
+	width: 350px;
+	height: 50px;
+	float: left;
+	border-radius: 25px;
+	text-align: center;
+	border: 0;
+	font-size: 30px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-60%);
+  background-color: #917F64;
+	color: #F4F1EA;
+}
+
+::placeholder {
+	color: #F4F1EA;
+}
+
+:-ms-input-placeholder {
+	color: #F4F1EA;
+}
+
+::-ms-input-placeholder {
+	color: #F4F1EA;
+}
+
+#searchButton {
+	height: 50px;
+	margin-left: 15px;
+	float: left;
+	background: #382110;
+	color: #F4F1EA;
+	border-radius: 25px;
+	transition: background 330ms, color 330ms;
+	position: absolute;
+	left: 50%;
+	transform: translateX(+175%);
+}
+
+#searchButton:hover {
+	cursor: pointer;
+	background: #917F64;
+	transition: background 330ms;
+}
+
+#stats {
+	visibility: hidden;
+	transform: translateY(-175%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#avatar, #avatarPlaceholder {
+	margin-bottom: 30px;
+}
+
+#avatar {
+	visibility: hidden;
+	width: 100px;
+	height: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #382110;
+	border: 5px solid #382110;
+	position: fixed;
+}
+
+#avatar:hover {
+	cursor: pointer;
+	background: #917F64;
+	border: 5px solid #917F64;
+}
+
+#avatar, #avatar:hover {
+	background-size: cover;
+	border-radius: 50%;
+	transition: background 330ms linear, border 330ms linear;
+}
+
+#avatarPlaceholder {
+	font-size: 100px;
+	color: #382110;
+}
+
+#username {
+	transition: color 500ms;
+	margin: -5px;
+}
+
+#username:hover {
+	color: #917F64;
+	cursor: pointer;
+	transition: color 500ms;
+}
+
+#books, #other {
+    width: 50%;
+    visibility: hidden;
+    float: left;
+}
+
+#booksRead, #goodreadsFriends {
+    margin-top: 50px;
+    color: darkgray;
+}
+
+#booksRead, #goodreadsFriends,
+#booksCurrentlyReading, #goodreadsReviews {
+    margin-top: 100px;
+    color: #382110;
+}
+
+#booksRead, #booksReadSubtitle, #goodreadsFriendsSubtitle, #goodreadsFriends,
+#booksCurrentlyReading, #booksCurrentlyReadingSubtitle, #goodreadsReviews, #goodreadsReviewsSubtitle {
+     font-size: 30px;
+}
+
+::selection {
+	color: #382110;
+	background: rgba(244,241,234,0.5);
+}
+
+textarea, select, input, button {
+	outline: none;
+	border: 0;
+}
+
+/*media queries*/
+/*iPad landscape media query*/
+@media only screen and (max-width: 1024px) {
+
+
+
+}
+
+/*iPad portrait media query*/
+@media only screen and (max-width: 768px) {
+
+
+
+}
+
+/*iPhone 5.5" media query*/
+@media only screen and (max-width: 414px) {
+
+
+
+}
+
+/*iPhone 4.7" portrait media query*/
+@media only screen and (max-width: 375px) {
+
+
+
+}
+
+/*iPhone 4" portrait media query*/
+@media only screen and (max-width: 320px) {
+
+
+
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="UTF-8">
+		<title>Readus</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	</head>
+
+	<body class="fadeIn">
+
+		<div id="container">
+
+			<div id="home">
+
+				<div id="logo" class="fas fa-book"></div>
+				<div id="title" class="text" style="font-weight: bold;">
+					<b>Readus</b> <br>
+				</div>
+				<div id="subtitle" class="text subtext">
+					Goodreads user stats
+				</div>
+
+				<form onsubmit="loadUserData(); return false;">
+
+					<input type="number" id="searchBar" class="text"
+						   placeholder="user id"
+							 pattern=".{8,8}" title="ID must be 8 characters long">
+					<input type="submit" id="searchButton" class="text" value="GO">
+
+				</form>
+
+			</div>
+
+			<div id="stats">
+
+				<div id="statsHeader">
+
+					<div id="avatar" onclick="openUserAvatar();"></div>
+					<div id="avatarPlaceholder" class="far fa-user-circle"></div>
+					<br>
+					<b><span id="username" class="text" onclick="openUserOnTrakt();" style="font-weight: bold;">null</span>
+					<span id="usernameContinued" class="text" style="font-weight: bold;">'s stats</span></b>
+					<div id="joined" class="text subtext">
+						Loading null's stats
+					</div>
+
+					<div id="books" class="text">
+
+			          <div id="booksRead" class="text" style="font-weight: bold;">
+			              XXX books
+			          </div>
+								<div id="booksReadSubtitle" class="text">
+			            	read
+			          </div>
+
+			          <div id="booksCurrentlyReading" class="text" style="font-weight: bold;">
+			              XXX books
+			          </div>
+								<div id="booksCurrentlyReadingSubtitle" class="text">
+			              currently reading
+			          </div>
+
+					</div>
+
+					<div id="other" class="text">
+
+            <div id="goodreadsFriends" class="text" style="font-weight: bold;">
+                XXX friends
+            </div>
+						<div id="goodreadsFriendsSubtitle" class="text">
+                  on Goodreads
+            </div>
+
+            <div id="goodreadsReviews" class="text" style="font-weight: bold;">
+                XXX reviews
+            </div>
+						<div id="goodreadsReviewsSubtitle" class="text">
+                  on Goodreads
+            </div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<script rel="script" src="js/scripts.js"></script>
+
+	</body>
+
+</html>
